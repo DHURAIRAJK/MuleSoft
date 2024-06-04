@@ -85,8 +85,8 @@ jobs:
       run: |
         anypoint-cli/bin/anypoint-cli --username=%ANYPOINT_USERNAME% --password=%ANYPOINT_PASSWORD% runtime-mgr cloudhub-application deploy %APP_NAME_MULESOFT_3% ./target/mulesoft-1-app.jar --region %REGION%
       env:
-        ANYPOINT_USERNAME: ${{ secrets.ANYPOINT_USERNAME }}
-        ANYPOINT_PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
+        ANYPOINT_USERNAME: ${{ secrets.ANYPOINT2_USERNAME }}
+        ANYPOINT_PASSWORD: ${{ secrets.ANYPOINT2_PASSWORD }}
         APP_NAME_MULESOFT_3: 'your-mulesoft-3-app-name'
         REGION: 'us-east-1'
 
